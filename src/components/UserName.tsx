@@ -1,3 +1,4 @@
+import React from "react";
 import { ProfileQuery } from "../services/content";
 import { userIdentification } from "../services/utilities";
 import { User } from "../utilities/types";
