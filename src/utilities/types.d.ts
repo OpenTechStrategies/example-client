@@ -14,14 +14,11 @@ export interface GraphChange {
   batchIndex: number;
 }
 
-// ## Profile ##
-export type Profile = {
+// ## User ##
+export type User = {
   fromId: string;
   contentHash?: HexString;
   url?: string;
-  summary?: string;
-  icon?: Array<ActivityContentImageLink>;
-  name?: string;
   handle?: string;
   blockNumber: number;
   blockIndex: number;
@@ -29,7 +26,7 @@ export type Profile = {
 };
 
 // ## FeedItem ##
-export type FeedItem = BroadcastAnnouncement & ActivityContentNote;
+export type FeedItem = BroadcastAnnouncement;
 
 // ## Reply ##
-export type Reply = ReplyAnnouncement & ActivityContentNote;
+export type Reply = ReplyAnnouncement;
